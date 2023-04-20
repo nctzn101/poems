@@ -4,14 +4,14 @@
     <title>firefighter</title>
   </head>
   <body>
-    <h1>firefighter</h1>
     <script src="https://cdn.jsdelivr.net/npm/telescopic"></script>
 
   <script src="https://unpkg.com/telescopic-text/lib/index.js"></script>
   <link href="https://unpkg.com/telescopic-text/lib/index.css" rel="stylesheet">
 </head>
 
-<div id="telescopicPoem"></div>
+<div id="telescopicPoem" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+</div>
 <script>
   const telescopicContent = createTelescopicTextFromBulletedList(`- watered 
  - even 
@@ -56,6 +56,8 @@
   const container = document.getElementById("telescopicPoem");
   container.appendChild(telescopicContent);
 </script>
+<div style="position: absolute; top: 80%; left: 50%; transform: translate(-50%, -50%);"> firefighter
+</div>
 
   </body>
 </html>
