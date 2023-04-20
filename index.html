@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>firefighter</title>
+  </head>
+  <body>
+    <h1>firefighter</h1>
+    <script src="https://cdn.jsdelivr.net/npm/telescopic"></script>
+
+  <script src="https://unpkg.com/telescopic-text/lib/index.js"></script>
+  <link href="https://unpkg.com/telescopic-text/lib/index.css" rel="stylesheet">
+</head>
+
+<div id="telescopicPoem"></div>
+<script>
+  const telescopicContent = createTelescopicTextFromBulletedList(`- watered 
+ - even 
+  - when i understood that even
+ - regularly watered
+- gardens wither.
+
+- i made a point.
+ - i made a point to stay on 
+ - call.
+  - call 
+  - just in case. 
+    - just in case there are
+    - signs 
+     - sudden signs
+    - of drought.
+  
+- i will sprint.
+ - should they burn, i will sprint.
+- i 
+ - but i
+- am a company of one.
+- i have buckets.
+ - and all i have are 
+ - buckets
+  - overflowing buckets
+   - buckets of care
+ 
+- take time.
+ - when i burn 
+ - take time.
+  - i hope you take time to
+   - i hope you take time out of your busy to
+- bring me a
+- glass.
+ - glass of water.
+  
+
+
+
+ `, {separator: ' ', textMode: 'text'});
+  const container = document.getElementById("telescopicPoem");
+  container.appendChild(telescopicContent);
+</script>
+
+  </body>
+</html>
+<head>
