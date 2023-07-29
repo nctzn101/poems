@@ -1,64 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>firefighter</title>
-  </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/telescopic"></script>
-
-  <script src="https://unpkg.com/telescopic-text/lib/index.js"></script>
-  <link href="https://unpkg.com/telescopic-text/lib/index.css" rel="stylesheet">
-</head>
-
-<div id="telescopicPoem" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-</div>
-<script>
-  const telescopicContent = createTelescopicTextFromBulletedList(`- watered 
- - even 
-  - when i understood that even
- - regularly watered
-- gardens wither.
-
-- i made a point.
- - i made a point to stay on 
- - call.
-  - call 
-  - just in case. 
-    - just in case there are
-    - signs 
-     - sudden signs
-    - of drought.
-  
-- i will sprint.
- - should they burn, i will sprint.
-- i 
- - but i
-- am a company of one.
-- i have buckets.
- - and all i have are 
- - buckets
-  - overflowing buckets
-   - buckets of care
- 
-- take time.
- - when i burn 
- - take time.
-  - i hope you take time to
-   - i hope you take time out of your busy to
-- bring me a
-- glass.
- - glass of water.
-  
-
-
-
- `, {separator: ' ', textMode: 'text'});
-  const container = document.getElementById("telescopicPoem");
-  container.appendChild(telescopicContent);
-</script>
-<div style="position: absolute; top: 80%; left: 50%; transform: translate(-50%, -50%);"> firefighter
-</div>
-
-  </body>
-</html>
 <head>
+    <title>(telescopic) poems by raluca</title>
+
+    <script src="https://unpkg.com/telescopic-text/lib/index.js"></script>
+  <link
+    href="https://unpkg.com/telescopic-text/lib/index.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+    <ul>
+    <li><a id="link" title="firefighter"
+ href="#" onclick="renderPoem('firefighter');return false;">firefighter</a></li>
+    <li><a id="link" title="the full experience" href="#" onclick="renderPoem('thefullexperience'); return false; ">the full experience</a></li>
+    <li><a id="link" title="to make a home" href="#" onclick="renderPoem('tomakeahome'); return false;">to make a home</a></li>
+</ul>
+
+
+    <div id="telescopicPoem"> choose a poem</div>   
+    <div id="titlePoem"></div>
+        
+</div>
+
+
+    <div class="footer">
+  <p>by raluca ~ <a href="https://warpcast.com/raluca">i'm on farcaster</a></p>
+</div>
+
+</body>
+</html>
